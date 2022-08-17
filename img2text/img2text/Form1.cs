@@ -27,7 +27,7 @@ namespace img2text
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.InitialDirectory = ".";
-                openFileDialog.Filter = "Image files |*.png|Image files (*.jpg)|*.jpg|Image files (*.jpeg)|*.jpeg|Image files (*.gif)|*.gif|Image files (*.bmp)|*.bmp";
+                openFileDialog.Filter = "Image Files(*PNG;*.BMP;*.JPG;*JPEG;*.GIF)|*PNG;*.BMP;*.JPG;*JPEG;*.GIF";
                 openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = true;
 
