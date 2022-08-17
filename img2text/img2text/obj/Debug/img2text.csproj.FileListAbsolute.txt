@@ -1,0 +1,9 @@
+C:\dev\img2text\img2text\img2text\bin\Debug\img2text.exe
+C:\dev\img2text\img2text\img2text\bin\Debug\img2text.pdb
+C:\dev\img2text\img2text\img2text\obj\Debug\img2text.csproj.AssemblyReference.cache
+C:\dev\img2text\img2text\img2text\obj\Debug\img2text.Form1.resources
+C:\dev\img2text\img2text\img2text\obj\Debug\img2text.Properties.Resources.resources
+C:\dev\img2text\img2text\img2text\obj\Debug\img2text.csproj.GenerateResource.cache
+C:\dev\img2text\img2text\img2text\obj\Debug\img2text.csproj.CoreCompileInputs.cache
+C:\dev\img2text\img2text\img2text\obj\Debug\img2text.exe
+C:\dev\img2text\img2text\img2text\obj\Debug\img2text.pdb

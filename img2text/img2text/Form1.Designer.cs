@@ -28,13 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnOPEN = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnOPEN
+            // 
+            this.btnOPEN.Location = new System.Drawing.Point(12, 12);
+            this.btnOPEN.Name = "btnOPEN";
+            this.btnOPEN.Size = new System.Drawing.Size(118, 23);
+            this.btnOPEN.TabIndex = 0;
+            this.btnOPEN.Text = "Open Image";
+            this.btnOPEN.UseVisualStyleBackColor = true;
+            this.btnOPEN.Click += new System.EventHandler(this.btnOPEN_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 273);
+            this.Controls.Add(this.btnOPEN);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnOPEN;
     }
 }
 
