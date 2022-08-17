@@ -12,8 +12,6 @@ namespace img2text
 {
     public partial class Form1 : Form
     {
-        private OpenFileDialog ofd;
-
         public Form1()
         {
             InitializeComponent();
@@ -21,29 +19,14 @@ namespace img2text
 
         private void btnOPEN_Click(object sender, EventArgs e)
         {
-            var fileContent = string.Empty;
-            var filePath = string.Empty;
-
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            // open file dialog   
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
             {
-                openFileDialog.InitialDirectory = ".";
-                openFileDialog.Filter = "Image Files(*PNG;*.BMP;*.JPG;*JPEG;*.GIF)|*PNG;*.BMP;*.JPG;*JPEG;*.GIF";
-                openFileDialog.FilterIndex = 2;
-                openFileDialog.RestoreDirectory = true;
-
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    //Get the path of specified file
-                    filePath = openFileDialog.FileName;
-
-                    //Read the contents of the file into a stream
-                    var fileStream = openFileDialog.OpenFile();
-
-                    using (StreamReader reader = new StreamReader(fileStream))
-                    {
-                        fileContent = reader.ReadToEnd();
-                    }
-                }
+                // display image in picture box  
+                pictureBox1.Image = new Bitmap(open.FileName);
             }
         }
     }
