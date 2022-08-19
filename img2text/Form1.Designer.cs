@@ -30,6 +30,7 @@
         {
             this.btnOPEN = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCONVERT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -37,7 +38,7 @@
             // 
             this.btnOPEN.Location = new System.Drawing.Point(12, 12);
             this.btnOPEN.Name = "btnOPEN";
-            this.btnOPEN.Size = new System.Drawing.Size(161, 23);
+            this.btnOPEN.Size = new System.Drawing.Size(233, 23);
             this.btnOPEN.TabIndex = 0;
             this.btnOPEN.Text = "Open Image";
             this.btnOPEN.UseVisualStyleBackColor = true;
@@ -45,18 +46,29 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 69);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(161, 220);
+            this.pictureBox1.Size = new System.Drawing.Size(233, 309);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnCONVERT
+            // 
+            this.btnCONVERT.Enabled = false;
+            this.btnCONVERT.Location = new System.Drawing.Point(12, 40);
+            this.btnCONVERT.Name = "btnCONVERT";
+            this.btnCONVERT.Size = new System.Drawing.Size(233, 23);
+            this.btnCONVERT.TabIndex = 2;
+            this.btnCONVERT.Text = "Convert IMG to TEXT";
+            this.btnCONVERT.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 273);
+            this.ClientSize = new System.Drawing.Size(257, 390);
+            this.Controls.Add(this.btnCONVERT);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnOPEN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -71,6 +83,7 @@
 
         private System.Windows.Forms.Button btnOPEN;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnCONVERT;
     }
 }
 

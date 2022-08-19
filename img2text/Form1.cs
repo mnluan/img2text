@@ -27,6 +27,7 @@ namespace img2text
             {
                 // display image in picture box  
                 pictureBox1.Image = new Bitmap(open.FileName);
+                btnCONVERT.Enabled = true;
             }
         }
     }
