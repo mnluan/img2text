@@ -33,6 +33,7 @@
             this.btnCONVERT = new System.Windows.Forms.Button();
             this.textConverted = new System.Windows.Forms.TextBox();
             this.path = new System.Windows.Forms.TextBox();
+            this.btnCOPY = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,11 +90,23 @@
             this.path.Size = new System.Drawing.Size(232, 20);
             this.path.TabIndex = 4;
             // 
+            // btnCOPY
+            // 
+            this.btnCOPY.Enabled = false;
+            this.btnCOPY.Location = new System.Drawing.Point(13, 385);
+            this.btnCOPY.Name = "btnCOPY";
+            this.btnCOPY.Size = new System.Drawing.Size(503, 23);
+            this.btnCOPY.TabIndex = 5;
+            this.btnCOPY.Text = "Copy Text";
+            this.btnCOPY.UseVisualStyleBackColor = true;
+            this.btnCOPY.Click += new System.EventHandler(this.btnCOPY_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 390);
+            this.ClientSize = new System.Drawing.Size(545, 419);
+            this.Controls.Add(this.btnCOPY);
             this.Controls.Add(this.path);
             this.Controls.Add(this.textConverted);
             this.Controls.Add(this.btnCONVERT);
@@ -115,6 +128,7 @@
         private System.Windows.Forms.Button btnCONVERT;
         private System.Windows.Forms.TextBox textConverted;
         private System.Windows.Forms.TextBox path;
+        private System.Windows.Forms.Button btnCOPY;
     }
 }
 

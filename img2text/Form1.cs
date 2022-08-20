@@ -43,10 +43,16 @@ namespace img2text
 
         public void btnCONVERT_Click(object sender, EventArgs e)
         {
-            //Enable button convert and show text
+            //Enable textbox with converted text, the button to copy and show text
             textConverted.Enabled = true;
+            btnCOPY.Enabled = true;
             textConverted.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus cursus ultricies. Morbi sit amet ullamcorper mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras accumsan porta magna, et pellentesque turpis viverra molestie. Suspendisse imperdiet mollis lorem, eu aliquam neque dapibus et. Donec vel massa eu tortor fringilla pharetra. Aenean aliquet tortor ut lacinia suscipit. Curabitur luctus eros vitae tincidunt varius. Vestibulum id suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus cursus ultricies. Morbi sit amet ullamcorper mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras accumsan porta magna, et pellentesque turpis viverra molestie. Suspendisse imperdiet mollis lorem, eu aliquam neque dapibus et. Donec vel massa eu tortor fringilla pharetra. Aenean aliquet tortor ut lacinia suscipit. Curabitur luctus eros vitae tincidunt varius. Vestibulum id suscipit nibh.";
+        }
 
+        private void btnCOPY_Click(object sender, EventArgs e)
+        {
+            //Copy the text from textbox 'TextConverted' to clipboard
+            Clipboard.SetText(textConverted.Text);
         }
     }
 }
