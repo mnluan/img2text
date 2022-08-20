@@ -109,6 +109,7 @@
             this.languagesBOX.Items.AddRange(new object[] {
             "English",
             "Portuguese",
+            "Spanish",
             "Russian",
             "Japanese"});
             this.languagesBOX.Location = new System.Drawing.Point(13, 68);

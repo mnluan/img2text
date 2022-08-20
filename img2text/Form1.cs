@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using IronOcr;
 
 namespace img2text
 {
@@ -23,7 +24,7 @@ namespace img2text
             OpenFileDialog open = new OpenFileDialog();
             
             // image filters  
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *png)|*.jpg; *.jpeg; *.gif; *.bmp; *png";
             if (open.ShowDialog() == DialogResult.OK)
             {
                 // display image in picture box  
@@ -53,36 +54,69 @@ namespace img2text
                 case "English":
                     try 
                     {
+                        IronTesseract IronOcr = new IronTesseract();
+                        var Result = IronOcr.Read(path.Text);
+                        textConverted.Text = Result.Text;
                     }
                     catch
-                    { 
+                    {
+                        textConverted.Text = "ERROR! Unable to convert Image to Text";
                     }
                     break;
 
                 case "Portuguese":
                     try
                     {
+                        IronTesseract IronOcr = new IronTesseract();
+                        IronOcr.Language = OcrLanguage.PortugueseBest;
+                        var Result = IronOcr.Read(path.Text);
+                        textConverted.Text = Result.Text;
                     }
                     catch
                     {
+                        textConverted.Text = "ERROR! Unable to convert Image to Text";
+                    }
+                    break;
+
+                case "Spanish":
+                    try
+                    {
+                        IronTesseract IronOcr = new IronTesseract();
+                        IronOcr.Language = OcrLanguage.SpanishBest;
+                        var Result = IronOcr.Read(path.Text);
+                        textConverted.Text = Result.Text;
+                    }
+                    catch
+                    {
+                        textConverted.Text = "ERROR! Unable to convert Image to Text";
                     }
                     break;
 
                 case "Japanese":
                     try
                     {
+                        IronTesseract IronOcr = new IronTesseract();
+                        IronOcr.Language = OcrLanguage.JapaneseBest;
+                        var Result = IronOcr.Read(path.Text);
+                        textConverted.Text = Result.Text;
                     }
                     catch
                     {
+                        textConverted.Text = "ERROR! Unable to convert Image to Text";
                     }
                     break;
 
                 case "Russian":
                     try
                     {
+                        IronTesseract IronOcr = new IronTesseract();
+                        IronOcr.Language = OcrLanguage.RussianBest;
+                        var Result = IronOcr.Read(path.Text);
+                        textConverted.Text = Result.Text;
                     }
                     catch
                     {
+                        textConverted.Text = "ERROR! Unable to convert Image to Text";
                     }
                     break;
             }

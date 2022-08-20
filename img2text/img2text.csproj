@@ -95,8 +95,10 @@
     <Error Condition="!Exists('..\packages\IronOcr.Languages.Portuguese.2020.11.2\build\IronOcr.Languages.Portuguese.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IronOcr.Languages.Portuguese.2020.11.2\build\IronOcr.Languages.Portuguese.targets'))" />
     <Error Condition="!Exists('..\packages\IronOcr.Languages.Japanese.2020.11.2\build\IronOcr.Languages.Japanese.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IronOcr.Languages.Japanese.2020.11.2\build\IronOcr.Languages.Japanese.targets'))" />
     <Error Condition="!Exists('..\packages\IronOcr.Languages.Russian.2020.11.2\build\IronOcr.Languages.Russian.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IronOcr.Languages.Russian.2020.11.2\build\IronOcr.Languages.Russian.targets'))" />
+    <Error Condition="!Exists('..\packages\IronOcr.Languages.Spanish.2020.11.2\build\IronOcr.Languages.Spanish.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IronOcr.Languages.Spanish.2020.11.2\build\IronOcr.Languages.Spanish.targets'))" />
   </Target>
   <Import Project="..\packages\IronOcr.Languages.Portuguese.2020.11.2\build\IronOcr.Languages.Portuguese.targets" Condition="Exists('..\packages\IronOcr.Languages.Portuguese.2020.11.2\build\IronOcr.Languages.Portuguese.targets')" />
   <Import Project="..\packages\IronOcr.Languages.Japanese.2020.11.2\build\IronOcr.Languages.Japanese.targets" Condition="Exists('..\packages\IronOcr.Languages.Japanese.2020.11.2\build\IronOcr.Languages.Japanese.targets')" />
   <Import Project="..\packages\IronOcr.Languages.Russian.2020.11.2\build\IronOcr.Languages.Russian.targets" Condition="Exists('..\packages\IronOcr.Languages.Russian.2020.11.2\build\IronOcr.Languages.Russian.targets')" />
+  <Import Project="..\packages\IronOcr.Languages.Spanish.2020.11.2\build\IronOcr.Languages.Spanish.targets" Condition="Exists('..\packages\IronOcr.Languages.Spanish.2020.11.2\build\IronOcr.Languages.Spanish.targets')" />
 </Project>
