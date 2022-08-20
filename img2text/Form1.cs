@@ -33,6 +33,9 @@ namespace img2text
                 // enable button 'convert image to text'
                 btnCONVERT.Enabled = true;
 
+                // enable options to select languages
+                languagesBOX.Enabled = true;
+
                 //pick the path from image
                 string sSelectedPath = open.FileName;
 
@@ -92,11 +95,38 @@ namespace img2text
                     }
                     break;
 
+                case "French":
+                    try
+                    {
+                        IronTesseract IronOcr = new IronTesseract();
+                        var Result = IronOcr.Read(path.Text);
+                        textConverted.Text = Result.Text;
+                    }
+                    catch
+                    {
+                        textConverted.Text = "ERROR! Unable to convert Image to Text";
+                    }
+                    break;
+
                 case "Japanese":
                     try
                     {
                         IronTesseract IronOcr = new IronTesseract();
                         IronOcr.Language = OcrLanguage.JapaneseBest;
+                        var Result = IronOcr.Read(path.Text);
+                        textConverted.Text = Result.Text;
+                    }
+                    catch
+                    {
+                        textConverted.Text = "ERROR! Unable to convert Image to Text";
+                    }
+                    break;
+
+                case "Japanese Vertical":
+                    try
+                    {
+                        IronTesseract IronOcr = new IronTesseract();
+                        IronOcr.Language = OcrLanguage.JapaneseVerticalBest;
                         var Result = IronOcr.Read(path.Text);
                         textConverted.Text = Result.Text;
                     }
@@ -127,6 +157,23 @@ namespace img2text
         {
             //Copy the text from textbox 'TextConverted' to clipboard
             Clipboard.SetText(textConverted.Text);
+        }
+
+        private void btnExportTXT_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+            saveFileDialog1.Filter = "txt files (*.txt)|*.txt";
+            saveFileDialog1.FilterIndex = 1;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                using (Stream s = File.Open(saveFileDialog1.FileName, FileMode.CreateNew))
+                using (StreamWriter sw = new StreamWriter(s))
+                {
+                    sw.WriteLine(textConverted.Text);
+                }
+            }   
         }
     }
 }
