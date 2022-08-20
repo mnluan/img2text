@@ -21,6 +21,7 @@ namespace img2text
         {
             // open file dialog   
             OpenFileDialog open = new OpenFileDialog();
+            
             // image filters  
             open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
             if (open.ShowDialog() == DialogResult.OK)
@@ -42,6 +43,7 @@ namespace img2text
 
         public void btnCONVERT_Click(object sender, EventArgs e)
         {
+            //Enable button convert and show text
             textConverted.Enabled = true;
             textConverted.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus cursus ultricies. Morbi sit amet ullamcorper mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras accumsan porta magna, et pellentesque turpis viverra molestie. Suspendisse imperdiet mollis lorem, eu aliquam neque dapibus et. Donec vel massa eu tortor fringilla pharetra. Aenean aliquet tortor ut lacinia suscipit. Curabitur luctus eros vitae tincidunt varius. Vestibulum id suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus cursus ultricies. Morbi sit amet ullamcorper mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras accumsan porta magna, et pellentesque turpis viverra molestie. Suspendisse imperdiet mollis lorem, eu aliquam neque dapibus et. Donec vel massa eu tortor fringilla pharetra. Aenean aliquet tortor ut lacinia suscipit. Curabitur luctus eros vitae tincidunt varius. Vestibulum id suscipit nibh.";
 
