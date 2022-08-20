@@ -108,7 +108,6 @@
             this.languagesBOX.FormattingEnabled = true;
             this.languagesBOX.Items.AddRange(new object[] {
             "English",
-            "Spanish",
             "Portuguese",
             "Russian",
             "Japanese"});
@@ -132,7 +131,7 @@
             this.Controls.Add(this.btnOPEN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.Text = "Image to Text Converter";
+            this.Text = "Image to Text Converter - OCR Application";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
