@@ -17,7 +17,7 @@ namespace img2text
             InitializeComponent();
         }
 
-        private void btnOPEN_Click(object sender, EventArgs e)
+        public void btnOPEN_Click(object sender, EventArgs e)
         {
             // open file dialog   
             OpenFileDialog open = new OpenFileDialog();
@@ -26,9 +26,25 @@ namespace img2text
             if (open.ShowDialog() == DialogResult.OK)
             {
                 // display image in picture box  
-                pictureBox1.Image = new Bitmap(open.FileName);
+                pictureBox.Image = new Bitmap(open.FileName);
+                
+                // enable button 'convert image to text'
                 btnCONVERT.Enabled = true;
+
+                //pick the path from image
+                string sSelectedPath = open.FileName;
+
+                //Enable and show path from image
+                path.Enabled = true;
+                path.Text = sSelectedPath;
             }
+        }
+
+        public void btnCONVERT_Click(object sender, EventArgs e)
+        {
+            textConverted.Enabled = true;
+            textConverted.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus cursus ultricies. Morbi sit amet ullamcorper mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras accumsan porta magna, et pellentesque turpis viverra molestie. Suspendisse imperdiet mollis lorem, eu aliquam neque dapibus et. Donec vel massa eu tortor fringilla pharetra. Aenean aliquet tortor ut lacinia suscipit. Curabitur luctus eros vitae tincidunt varius. Vestibulum id suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus cursus ultricies. Morbi sit amet ullamcorper mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras accumsan porta magna, et pellentesque turpis viverra molestie. Suspendisse imperdiet mollis lorem, eu aliquam neque dapibus et. Donec vel massa eu tortor fringilla pharetra. Aenean aliquet tortor ut lacinia suscipit. Curabitur luctus eros vitae tincidunt varius. Vestibulum id suscipit nibh.";
+
         }
     }
 }
