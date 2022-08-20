@@ -34,6 +34,7 @@
             this.textConverted = new System.Windows.Forms.TextBox();
             this.path = new System.Windows.Forms.TextBox();
             this.btnCOPY = new System.Windows.Forms.Button();
+            this.languagesBOX = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,9 +50,9 @@
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(12, 96);
+            this.pictureBox.Location = new System.Drawing.Point(12, 121);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(233, 282);
+            this.pictureBox.Size = new System.Drawing.Size(233, 257);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 1;
             this.pictureBox.TabStop = false;
@@ -84,7 +85,7 @@
             // 
             this.path.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.path.Enabled = false;
-            this.path.Location = new System.Drawing.Point(13, 70);
+            this.path.Location = new System.Drawing.Point(13, 95);
             this.path.Name = "path";
             this.path.ReadOnly = true;
             this.path.Size = new System.Drawing.Size(232, 20);
@@ -101,11 +102,28 @@
             this.btnCOPY.UseVisualStyleBackColor = true;
             this.btnCOPY.Click += new System.EventHandler(this.btnCOPY_Click);
             // 
+            // languagesBOX
+            // 
+            this.languagesBOX.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.languagesBOX.FormattingEnabled = true;
+            this.languagesBOX.Items.AddRange(new object[] {
+            "English",
+            "Spanish",
+            "Portuguese",
+            "Russian",
+            "Japanese"});
+            this.languagesBOX.Location = new System.Drawing.Point(13, 68);
+            this.languagesBOX.Name = "languagesBOX";
+            this.languagesBOX.Size = new System.Drawing.Size(232, 21);
+            this.languagesBOX.TabIndex = 6;
+            this.languagesBOX.Text = "English";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(545, 419);
+            this.Controls.Add(this.languagesBOX);
             this.Controls.Add(this.btnCOPY);
             this.Controls.Add(this.path);
             this.Controls.Add(this.textConverted);
@@ -129,6 +147,7 @@
         private System.Windows.Forms.TextBox textConverted;
         private System.Windows.Forms.TextBox path;
         private System.Windows.Forms.Button btnCOPY;
+        private System.Windows.Forms.ComboBox languagesBOX;
     }
 }
 
