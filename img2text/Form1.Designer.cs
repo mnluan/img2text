@@ -60,7 +60,7 @@
             // btnCONVERT
             // 
             this.btnCONVERT.Enabled = false;
-            this.btnCONVERT.Location = new System.Drawing.Point(12, 40);
+            this.btnCONVERT.Location = new System.Drawing.Point(12, 92);
             this.btnCONVERT.Name = "btnCONVERT";
             this.btnCONVERT.Size = new System.Drawing.Size(233, 23);
             this.btnCONVERT.TabIndex = 2;
@@ -83,12 +83,12 @@
             // 
             // path
             // 
-            this.path.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.path.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.path.Enabled = false;
-            this.path.Location = new System.Drawing.Point(13, 95);
+            this.path.Location = new System.Drawing.Point(14, 39);
             this.path.Name = "path";
             this.path.ReadOnly = true;
-            this.path.Size = new System.Drawing.Size(232, 20);
+            this.path.Size = new System.Drawing.Size(232, 13);
             this.path.TabIndex = 4;
             // 
             // btnCOPY
@@ -112,7 +112,7 @@
             "Spanish",
             "Russian",
             "Japanese"});
-            this.languagesBOX.Location = new System.Drawing.Point(13, 68);
+            this.languagesBOX.Location = new System.Drawing.Point(14, 65);
             this.languagesBOX.Name = "languagesBOX";
             this.languagesBOX.Size = new System.Drawing.Size(232, 21);
             this.languagesBOX.TabIndex = 6;
