@@ -36,16 +36,16 @@
             this.btnCOPY = new System.Windows.Forms.Button();
             this.languagesBOX = new System.Windows.Forms.ComboBox();
             this.btnExportTXT = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOPEN
             // 
-            this.btnOPEN.Location = new System.Drawing.Point(12, 63);
+            this.btnOPEN.Location = new System.Drawing.Point(14, 28);
             this.btnOPEN.Name = "btnOPEN";
             this.btnOPEN.Size = new System.Drawing.Size(321, 23);
             this.btnOPEN.TabIndex = 0;
@@ -55,9 +55,9 @@
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(14, 148);
+            this.pictureBox.Location = new System.Drawing.Point(14, 113);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(321, 276);
+            this.pictureBox.Size = new System.Drawing.Size(321, 311);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 1;
             this.pictureBox.TabStop = false;
@@ -65,7 +65,7 @@
             // btnCONVERT
             // 
             this.btnCONVERT.Enabled = false;
-            this.btnCONVERT.Location = new System.Drawing.Point(12, 119);
+            this.btnCONVERT.Location = new System.Drawing.Point(14, 84);
             this.btnCONVERT.Name = "btnCONVERT";
             this.btnCONVERT.Size = new System.Drawing.Size(323, 23);
             this.btnCONVERT.TabIndex = 2;
@@ -78,19 +78,19 @@
             this.textConverted.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textConverted.Enabled = false;
             this.textConverted.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textConverted.Location = new System.Drawing.Point(370, 62);
+            this.textConverted.Location = new System.Drawing.Point(343, 27);
             this.textConverted.Multiline = true;
             this.textConverted.Name = "textConverted";
             this.textConverted.ReadOnly = true;
             this.textConverted.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textConverted.Size = new System.Drawing.Size(281, 365);
+            this.textConverted.Size = new System.Drawing.Size(308, 400);
             this.textConverted.TabIndex = 3;
             // 
             // path
             // 
             this.path.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.path.Enabled = false;
-            this.path.Location = new System.Drawing.Point(12, 34);
+            this.path.Location = new System.Drawing.Point(12, 498);
             this.path.Name = "path";
             this.path.ReadOnly = true;
             this.path.Size = new System.Drawing.Size(630, 13);
@@ -120,7 +120,7 @@
             "Russian",
             "Japanese",
             "Japanese Vertical"});
-            this.languagesBOX.Location = new System.Drawing.Point(16, 92);
+            this.languagesBOX.Location = new System.Drawing.Point(16, 57);
             this.languagesBOX.Name = "languagesBOX";
             this.languagesBOX.Size = new System.Drawing.Size(319, 21);
             this.languagesBOX.TabIndex = 6;
@@ -136,16 +136,16 @@
             this.btnExportTXT.UseVisualStyleBackColor = true;
             this.btnExportTXT.Click += new System.EventHandler(this.btnExportTXT_Click);
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.aboutToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(663, 24);
-            this.menuStrip1.TabIndex = 8;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(663, 24);
+            this.menuStrip.TabIndex = 8;
+            this.menuStrip.Text = "menuStrip";
             // 
             // fileToolStripMenuItem
             // 
@@ -163,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 494);
+            this.ClientSize = new System.Drawing.Size(663, 523);
             this.Controls.Add(this.btnExportTXT);
             this.Controls.Add(this.languagesBOX);
             this.Controls.Add(this.btnCOPY);
@@ -172,14 +172,14 @@
             this.Controls.Add(this.btnCONVERT);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.btnOPEN);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "Form1";
             this.Text = "Image to Text Converter - OCR Application";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,7 +195,7 @@
         private System.Windows.Forms.Button btnCOPY;
         private System.Windows.Forms.ComboBox languagesBOX;
         private System.Windows.Forms.Button btnExportTXT;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
