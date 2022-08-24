@@ -175,5 +175,12 @@ namespace img2text
                 }
             }   
         }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Same command from open button
+            btnOPEN_Click(sender, e);
+        }
     }
+
 }
