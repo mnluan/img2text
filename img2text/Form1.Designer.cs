@@ -135,6 +135,7 @@
             // btnExportTXT
             // 
             this.btnExportTXT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExportTXT.Enabled = false;
             this.btnExportTXT.Location = new System.Drawing.Point(3, 434);
             this.btnExportTXT.Name = "btnExportTXT";
             this.btnExportTXT.Size = new System.Drawing.Size(356, 23);
@@ -167,6 +168,7 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // flowLayoutPanel1
             // 

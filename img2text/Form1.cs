@@ -47,9 +47,10 @@ namespace img2text
 
         public void btnCONVERT_Click(object sender, EventArgs e)
         {
-            //Enable textbox with converted text and the button to copy
+            //Enable textbox with converted text, the copy button and export button
             textConverted.Enabled = true;
             btnCOPY.Enabled = true;
+            btnExportTXT.Enabled = true;
 
             String language = languagesBOX.Text;
             switch (language)
@@ -180,6 +181,12 @@ namespace img2text
         {
             //Same command from open button
             btnOPEN_Click(sender, e);
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 newWindow = new Form2();
+            newWindow.Show();
         }
     }
 
