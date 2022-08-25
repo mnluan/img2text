@@ -67,11 +67,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.Location = new System.Drawing.Point(54, 249);
+            this.label1.Location = new System.Drawing.Point(70, 249);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 25);
+            this.label1.Size = new System.Drawing.Size(185, 25);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Image to Text Converter";
+            this.label1.Text = "Img2Text Converter";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -107,9 +107,9 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
-            this.Text = "Image to Text Converter - OCR Application";
+            this.Text = "Img2Text Converter - OCR Application";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

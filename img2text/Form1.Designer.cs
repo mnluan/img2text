@@ -39,9 +39,9 @@
             this.btnExportTXT = new System.Windows.Forms.Button();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.menuStrip.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -73,7 +73,7 @@
             this.btnCONVERT.Name = "btnCONVERT";
             this.btnCONVERT.Size = new System.Drawing.Size(356, 23);
             this.btnCONVERT.TabIndex = 2;
-            this.btnCONVERT.Text = "Convert IMG to TEXT";
+            this.btnCONVERT.Text = "Convert Image to Text";
             this.btnCONVERT.UseVisualStyleBackColor = true;
             this.btnCONVERT.Click += new System.EventHandler(this.btnCONVERT_Click);
             // 
@@ -163,6 +163,13 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
@@ -186,13 +193,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(359, 484);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.openToolStripMenuItem.Text = "Open";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,7 +206,7 @@
             this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Image to Text Converter - OCR Application";
+            this.Text = "Img2Text Converter - OCR Application";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
